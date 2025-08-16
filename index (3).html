@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Normal Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-logo">Multi Calculator</div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="normal.html">Normal Calculator</a>
+    <a href="age.html">Age Calculator</a>
+    <a href="emi.html">EMI Calculator</a>
+    <a href="#">About Us</a>
+    <a href="#">Privacy Policy</a>
+  </div>
+  <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Buttons -->
+<div class="calc-buttons">
+  <a href="normal.html" class="calc-btn">Normal Calculator</a>
+  <a href="age.html" class="calc-btn">Age Calculator</a>
+  <a href="emi.html" class="calc-btn">EMI Calculator</a>
+</div>
+
+<!-- Normal Calculator -->
+<section class="section">
+  <h2>Normal Calculator</h2>
+  <div class="calculator">
+    <input type="text" id="res" readonly>
+    <div class="calc-grid">
+      <button onclick="Solve('7')">7</button>
+      <button onclick="Solve('8')">8</button>
+      <button onclick="Solve('9')">9</button>
+      <button onclick="Solve('/')">÷</button>
+
+      <button onclick="Solve('4')">4</button>
+      <button onclick="Solve('5')">5</button>
+      <button onclick="Solve('6')">6</button>
+      <button onclick="Solve('*')">×</button>
+
+      <button onclick="Solve('1')">1</button>
+      <button onclick="Solve('2')">2</button>
+      <button onclick="Solve('3')">3</button>
+      <button onclick="Solve('-')">−</button>
+
+      <button onclick="Solve('0')">0</button>
+      <button onclick="Solve('.')">.</button>
+      <button onclick="Result()">=</button>
+      <button onclick="Solve('+')">+</button>
+    </div>
+    <div class="calc-ops">
+      <button onclick="Clear()">C</button>
+      <button onclick="Back()">⌫</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>Made with ❤️ By Parben Biswas</p>
+  <p>Copyright 2025 | All rights reserved</p>
+</footer>
+
+</body>
+</html>
